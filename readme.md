@@ -348,3 +348,25 @@ Nutze die interaktive Test-UI im Frontend:
 2. Gebe die Base URL ein (`http://localhost:3000/AuthTestApp`)
 3. Teste alle Endpoints direkt in der UI
 4. Token werden automatisch angezeigt und können wiederverwendet werden
+
+## Screenshots
+
+### Login
+
+![Login](./screenshots/login.png)
+
+### Dashboard / Token Management
+
+![Dashboard](./screenshots/dashboard.png)
+
+### Refresh Token
+
+![Refresh](./screenshots/refresh.png)
+
+### Logout
+
+![Logout](./screenshots/logout.png)
+
+### Fehlerbehandlung - Falsche Credentials
+
+![Wrong Credentials](./screenshots/wrongCredentials.png)
