@@ -2,7 +2,7 @@
 
 Eine vollständige Authentifizierungs- und Autorisierungs-API mit JWT-basiertem Token-Management, User-Rollen-System und Refresh-Token-Logik. Das Projekt bietet sichere Endpoints für Registrierung, Login, Logout und Admin-Management mit einer interaktiven Test-UI.
 
-## Was das Projekt erfüllt
+## Features
 
 - **User-Registrierung** mit E-Mail und Passwort (bcrypt-gehashed)
 - **Login** mit JWT Access & Refresh Token-Generierung
