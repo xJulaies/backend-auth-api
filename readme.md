@@ -38,7 +38,7 @@ Eine vollständige Authentifizierungs- und Autorisierungs-API mit JWT-basiertem 
 
 ## Projektziel
 
-Das Ziel des Projekts ist es, ein produktionsreifes Auth-System zu entwickeln, das folgende Best Practices abbildet:
+Das Ziel des Projekts ist es, ein praxisnahes Auth-System zu entwickeln, das folgende Best Practices abbildet:
 
 - Sichere Password-Verwaltung durch Hashing
 - JWT-basierte Token-Authentifizierung mit kurzer Lebensdauer
@@ -348,11 +348,3 @@ Nutze die interaktive Test-UI im Frontend:
 2. Gebe die Base URL ein (`http://localhost:3000/AuthTestApp`)
 3. Teste alle Endpoints direkt in der UI
 4. Token werden automatisch angezeigt und können wiederverwendet werden
-
-## Hinweis zu Agentic Engineering
-
-Dieses Projekt wurde teilweise mit Agentic Engineering entwickelt. Dabei wurden Architekturentscheidungen, API-Design, Validierungslogik, Authentifizierung und Debugging mit Coding-Agenten durchgeführt. Die Implementierung wurde bewusst überprüft und angepasst, statt Code blind zu akzeptieren.
-
-## Lizenz
-
-ISC
