@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auth Test Client</title>
+    <script type="module" src="./dist/index.js"></script>
+    <link rel="stylesheet" href="styles.css"
+  </head>
+  <body>
+    <main class="app">
+      <header class="header">
+        <h1>Auth Test Client</h1>
+        <p>Teste Register, Login, Me, Refresh und Logout direkt im Browser.</p>
+      </header>
+
+      <section class="panel">
+        <h2>API Config</h2>
+        <div class="field">
+          <label for="baseUrl">Base URL</label>
+          <input
+            id="baseUrl"
+            type="text"
+            value="http://localhost:3000/AuthTestApp"
+            placeholder="http://localhost:3000/AuthTestApp"
+          />
+        </div>
+      </section>
+
+      <section class="grid">
+        <article class="panel">
+          <h2>Register</h2>
+          <form id="registerForm" class="form">
+            <div class="field">
+              <label for="registerEmail">Email</label>
+              <input id="registerEmail" name="email" type="email" required />
+            </div>
+            <div class="field">
+              <label for="registerUsername">Username</label>
+              <input
+                id="registerUsername"
+                name="username"
+                type="text"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="registerPassword">Password</label>
+              <input
+                id="registerPassword"
+                name="password"
+                type="password"
+                required
+              />
+            </div>
+            <button type="submit">Register</button>
+          </form>
+        </article>
+
+        <article class="panel">
+          <h2>Login</h2>
+          <form id="loginForm" class="form">
+            <div class="field">
+              <label for="loginEmail">Email</label>
+              <input id="loginEmail" name="email" type="email" required />
+            </div>
+            <div class="field">
+              <label for="loginPassword">Password</label>
+              <input
+                id="loginPassword"
+                name="password"
+                type="password"
+                required
+              />
+            </div>
+            <button type="submit">Login</button>
+          </form>
+        </article>
+      </section>
+
+      <section class="grid">
+        <article class="panel">
+          <h2>Session</h2>
+          <div class="actions">
+            <button id="meButton" type="button">GET /me</button>
+            <button id="refreshButton" type="button">POST /refresh</button>
+            <button id="logoutButton" type="button">POST /logout</button>
+            <button id="clearTokensButton" type="button" class="secondary">
+              Clear tokens
+            </button>
+          </div>
+        </article>
+
+        <article class="panel">
+          <h2>Admin</h2>
+          <form id="makeAdminForm" class="form">
+            <div class="field">
+              <label for="adminEmail">Email</label>
+              <input id="adminEmail" name="email" type="email" required />
+            </div>
+            <button type="submit">PATCH /make-admin</button>
+          </form>
+        </article>
+      </section>
+
+      <section class="panel">
+        <h2>Tokens</h2>
+        <div class="token-box">
+          <label for="accessToken">Access Token</label>
+          <textarea id="accessToken" rows="6" readonly></textarea>
+        </div>
+        <div class="token-box">
+          <label for="refreshToken">Refresh Token</label>
+          <textarea id="refreshToken" rows="6" ></textarea>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Response</h2>
+        <pre id="responseOutput">Noch keine Anfrage gesendet.</pre>
+      </section>
+    </main>
+
+    
+  </body>
+</html>
